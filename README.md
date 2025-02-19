@@ -1,3 +1,45 @@
+# 📊 CRM Básico con Laravel, Livewire y Chart.js
+
+Este es un **CRM básico** desarrollado en **Laravel** con **Livewire** y **TailwindCSS**, que permite la gestión de clientes, productos y ventas. También incluye un **dashboard interactivo** con estadísticas y gráficos de ventas en tiempo real utilizando **Chart.js**.
+
+## 🚀 Características principales
+✅ Autenticación con Laravel Breeze  
+✅ Gestión de clientes, productos y ventas  
+✅ Dashboard con métricas clave (ventas, clientes, stock bajo)  
+✅ Gráfico dinámico de ventas con Chart.js  
+✅ Integración con Livewire para navegación sin recarga  
+✅ Diseño moderno con TailwindCSS  
+
+## 🛠 Tecnologías utilizadas
+- **Laravel** (Framework PHP)  
+- **Livewire** (Componentes dinámicos en el backend)  
+- **Chart.js** (Gráficos interactivos)  
+- **TailwindCSS** (Estilos y diseño responsivo)  
+- **MySQL** (Base de datos)  
+
+## ⚡ Instalación
+- **Dependencias**  
+composer install   
+npm install
+
+- **Configurar el entorno**  
+Renombrar el archivo .env.example a .env y configurar la base de datos
+
+- **Generar la clave de aplicación**  
+php artisan key:generate
+
+- **Migrar la base de datos**  
+php artisan migrate --seed
+
+- **Compilar los assets**  
+npm run build
+
+- **Iniciar**  
+npm run dev
+
+- **Se probo crendo un host con MAMP pro**
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

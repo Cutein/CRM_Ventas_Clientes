@@ -15,6 +15,16 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
+        <!-- Contenedor de notificaciones -->
+        <div x-data="{ message: '', type: '' }"
+            x-on:notificar.window="message = $event.detail.message; type = $event.detail.type; setTimeout(() => message = '', 3000)">
+            <template x-if="message">
+                <div :class="type === 'success' ? 'bg-green-500' : 'bg-red-500'" class="text-white p-3 rounded">
+                    <span x-text="message"></span>
+                </div>
+            </template>
+        </div>
+   
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
             <livewire:layout.navigation />
 
@@ -28,7 +38,7 @@
             @endif
 
             <!-- Page Content -->
-            <main>
+            <main class="p-4 h-screen bg-gradient-to-r from-blue-600 to-indigo-800">
                 {{ $slot }}
             </main>
         </div>
